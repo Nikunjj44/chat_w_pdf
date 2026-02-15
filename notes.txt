@@ -1,0 +1,17 @@
+we take pdf from the users - we take multiple
+
+we then divide these pdf into chunks of texts
+these chunks will then be converted into embeddings
+
+embeddings = number / vector representation of our texts
+
+these embeddings also consist of the meanings of our texts
+
+then we store these in a vector DB 
+
+Then:
+- when the user asks a question - we will embed it with the same algo as we did for the pdf chunks
+- this allows us to go into the vectorDB and find the similar vectors / same meaning or context
+- after finding similar texts we then rank them and send to the langugae model
+
+we use the language model (from huggung face) - where we send the context and the LLM then anwers the question that we sent
