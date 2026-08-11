@@ -2,7 +2,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceInstructEmbeddings
+from langchain_community.embeddings import HuggingFaceInstructEmbeddings, OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
 def get_pdf_data(data):
@@ -53,7 +53,9 @@ def get_vector_store(text):
     # we can use OpenAIEmbeddings - but their benchmarking is not the best and it is paid
     # the vector store FAISS is local, for cloud we can use Pinecone
     # this would be slow as it is doing this on the local CPU, but it requires a GPU
-    embeddings = HuggingFaceInstructEmbeddings(model_name = "hkunlp/instructor-xl")
+    # embeddings = HuggingFaceInstructEmbeddings(model_name = "hkunlp/instructor-xl")
+
+    embeddings = OpenAIEmbeddings()
     vector_store = FAISS.from_texts(
         texts = text,
         embedding = embeddings
@@ -82,8 +84,12 @@ def main():
                 # Now we split all of the text and break it down into chunks in order to feed it into the model
                 chunks = get_text_chunks(pdf_text)
 
+                st.write(chunks)
+
                 # create the vector store
                 vector_store = get_vector_store(chunks)
+
+                st.write(vector_store)
 
 
 if __name__ == "__main__":
