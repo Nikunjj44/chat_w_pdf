@@ -262,7 +262,7 @@ def main():
             elif not uploaded_pdfs:
                 st.error("⚠️  Please upload at least one PDF.")
             else:
-                with st.spinner("Saving... This might take some time :eight-thirty:"):
+                with st.spinner("Saving... This might take some time ⏳"):
                     try:
                         pdf_text = get_pdf_data(uploaded_pdfs)
                         chunks = get_text_chunks(pdf_text)
@@ -270,7 +270,7 @@ def main():
                         st.session_state.conversation = create_conversation_chain(
                             st.session_state.vector_store, api_key
                         )
-                        st.success("PDF saved successfully! :check_mark_button:")
+                        st.success("PDF saved successfully! ✅")
                     except Exception as e:
                         st.error(f"❌ Something went wrong: {e}")
                         if "api_key" in str(e).lower() or "authentication" in str(e).lower():
