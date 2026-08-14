@@ -35,7 +35,29 @@ This project implements a conversational chatbot that lets users upload one or m
 6. Building Streamlit App
 
 ## Streamlit Application
-<!-- Add your screenshots and application link here -->
+
+**Landing Page**
+<img width="1374" height="899" alt="image" src="https://github.com/user-attachments/assets/02db8490-2eb4-44e4-8dfd-b2d0962150c8" />
+
+**Adding inputs in the sidebar (OpenAI API key and PDFs)**
+<img width="290" height="609" alt="image" src="https://github.com/user-attachments/assets/40f5ed82-3c5e-4efa-8b3e-40179a693ab0" />
+
+**Sample Chat Output**
+<img width="741" height="823" alt="image" src="https://github.com/user-attachments/assets/07da0050-e470-4ca5-b401-3c4d7b1a74ba" />
+<img width="724" height="758" alt="image" src="https://github.com/user-attachments/assets/c617696f-1163-4d36-826d-45ef9846b12c" />
+
+**Examples of some captured edge cases**
+The user can see their whole chat history in a scrollable container.
+The answer prompts also formats the answers properly and bolds the topics as seen in the showcasing of the contents of one of the files.
+
+<img width="724" height="696" alt="image" src="https://github.com/user-attachments/assets/aaacd28d-209f-4c18-991d-6df4fe0a4c67" />
+
+Mathematical formulas are also displayed accurately.
+<img width="724" height="341" alt="image" src="https://github.com/user-attachments/assets/0b297ba7-2e4a-4915-a975-45daebddac1c" />
+<img width="726" height="747" alt="image" src="https://github.com/user-attachments/assets/cf52031b-9ce3-4395-8c0c-246f721c760c" />
+
+**Application Link -- Try it out 😄**
+https://chat-with-pdf-files.streamlit.app
 
 ## Future Scope
 
