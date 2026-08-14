@@ -40,9 +40,11 @@ This project implements a conversational chatbot that lets users upload one or m
 <img width="1374" height="899" alt="image" src="https://github.com/user-attachments/assets/02db8490-2eb4-44e4-8dfd-b2d0962150c8" />
 
 **Adding inputs in the sidebar (OpenAI API key and PDFs)**
+
 <img width="290" height="609" alt="image" src="https://github.com/user-attachments/assets/40f5ed82-3c5e-4efa-8b3e-40179a693ab0" />
 
 **Sample Chat Output**
+
 <img width="741" height="823" alt="image" src="https://github.com/user-attachments/assets/07da0050-e470-4ca5-b401-3c4d7b1a74ba" />
 <img width="724" height="758" alt="image" src="https://github.com/user-attachments/assets/c617696f-1163-4d36-826d-45ef9846b12c" />
 
