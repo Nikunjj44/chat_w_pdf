@@ -61,6 +61,7 @@ Mathematical formulas are also displayed accurately.
 <img width="726" height="747" alt="image" src="https://github.com/user-attachments/assets/cf52031b-9ce3-4395-8c0c-246f721c760c" />
 
 **Application Link -- Try it out 😄**
+
 https://chat-with-pdf-files.streamlit.app
 
 ## Future Scope
